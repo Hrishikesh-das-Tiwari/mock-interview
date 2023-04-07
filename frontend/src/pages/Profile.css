@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Ceviche+One&family=Francois+One&family=Merriweather&family=Montserrat&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;900&family=Sacramento&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
+
+:root {
+  --section-rotate: 9vw;
+}
+
+.polygon {
+  /* position: relative; */
+  min-height: 60vh;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--section-rotate)),
+    0 100%
+  );
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--section-rotate)),
+    0 100%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    /* from(#000),
+    to(#000) */ from(#a084dc),
+    to(#645cbb)
+  );
+  /* color: white; */
+}
+.polygon p {
+  font-weight: bolder;
+}
+
+.img {
+  max-width: 13vw;
+  max-height: 13vw;
+  min-width: 95px;
+  min-height: 95px;
+  border-radius: 10px;
+}
+.edit-profile-btn {
+  background-color: #2B7A0B !important;
+}
+.edit-link{
+  text-decoration: none;
+  color: white;
+}
+.name {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  max-width: 50%;
+  color: white;
+  background-color: inherit;
+}
+.circle-alert {
+  color: #7dce13;
+  color: red;
+  font-size: 13px !important;
+}
+
+.result{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+}
